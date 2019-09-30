@@ -1,12 +1,12 @@
 from tkinter import *
 window=Tk()
 window.title("TODO-LIST APP")
-content=Listbox(window,font="ariel 20 italic")
+content=Listbox(window,font="ariel 15 italic")
 task=StringVar()
-e=Entry(window,textvariable=task,font="Ariel 20")
+e=Entry(window,textvariable=task,font="Ariel 15")
 #lamda func used so that no need to define any function elsewhere
-add=Button(window,text="ADD",font="Ariel 20",bg="chartreuse1",command=lambda content=content,task=task:content.insert(END,task.get()))
-delete=Button(window,text="DELETE",font="Ariel 20",bg="#FF6103",command=lambda content=content: content.delete(ANCHOR))
+add=Button(window,text="TO DO",font="Ariel 20",bg="chartreuse1",command=lambda content=content,task=task:content.insert(END,task.get()))
+delete=Button(window,text="REMOVE",font="Ariel 20",bg="#FF6103",command=lambda content=content: content.delete(ANCHOR))
 #anchor used so comp. knows that selected text need to be deleted
 
 content.grid(row=0,column=0,columnspan=2,padx=5,pady=10)
