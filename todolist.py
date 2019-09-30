@@ -1,7 +1,7 @@
 from tkinter import *
 window=Tk()
 window.title("TODO-LIST APP")
-content=Listbox(window,font="ariel 20 italic")
+content=Listbox(window,font="ariel 25 italic")
 task=StringVar()
 e=Entry(window,textvariable=task,font="Ariel 20")
 #lamda func used so that no need to define any function elsewhere
